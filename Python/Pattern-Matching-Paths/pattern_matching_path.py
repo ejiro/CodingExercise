@@ -1,7 +1,7 @@
 import sys
 
 
-class Node:
+class Node(object):
     """
     An object representing a node in the tree/linked list structure
     """
@@ -25,7 +25,7 @@ class Node:
         return [p.data for p in self.path]
 
 
-class Pattern:
+class Pattern(object):
     """
     An abstraction of a pattern, it contains the number of wildcards, the leftmost index of the wildcard
     and the original pattern as list from standard input
@@ -40,7 +40,7 @@ class Pattern:
             self.pattern))
 
 
-class CustomTrie:
+class CustomTrie(object):
     _map = {}
 
     def __init__(self):
